@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jonDesign</title>
+<meta charset="utf-8"/>
+<meta content="Alexandr Komarevich" name="author"/>
+<meta content="jonDesign - Дизайн-студия" name="description"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<link rel="shortcut icon" href="./favicon.png" type="image/x-icon"/>
+<script type="text/javascript" src="./js/assets/in-view.min.js"></script>
+<link href="app.css?d1bca0fdf3fdff1728e6" rel="stylesheet"></head>
+<body>
+<div id="preloader">
+<div class="sk-folding-cube">
+<div class="sk-cube sk-cube-1"></div>
+<div class="sk-cube sk-cube-2"></div>
+<div class="sk-cube sk-cube-4"></div>
+<div class="sk-cube sk-cube-3"></div>
+</div>
+</div>
+<header class="header">
+<div class="header__container">
+<div class="header__logo"><a href="/"><img src="./img/logo.svg"/></a></div>
+<div class="header__mobile-icon"><span class="mdi mdi-reorder-horizontal"></span></div>
+<nav class="navigation">
+<div class="navigation__container">
+<div class="navigation__content">
+<div class="navigation__item"><a href="/">Главная</a></div>
+<div class="navigation__item"><a href="/services.html">Услуги</a></div>
+<div class="navigation__item dropdown"><a href="/portfolio.html">Портфолио</a>
+<div class="dropdown-content">
+<div class="navigation__item"><a href="/contact.html">Тест</a></div>
+</div>
+</div>
+<div class="navigation__item"><a href="/contact.html">Контакты</a></div>
+<div class="navigation__item"><a href="/order.html">Оформить Заказ</a></div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<section class="subheader">
+<div class="subheader__container">
+<ul class="subheader__breadcrumbs">
+<li><a href="/">Главная</a></li>
+<li><a href="/order.html">Оформить заказ</a></li>
+</ul>
+<div class="subheader__title">
+<h1>Оформить заказ</h1>
+</div>
+<div class="subheader__description">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum quibusdam alias iste obcaecati ex odit nobis autem quam, adipisci optio fugit laborum, praesentium, impedit enim quis inventore itaque ratione?</p>
+</div>
+</div>
+</section>
+<section class="order">
+<div class="order__container">
+<form action="" method="post" id="orderForm">
+<div class="order__left">
+<div class="formGroup">
+<label>Как к вам обращаться?</label>
+<input type="text" placeholder="ФИО" value="" required="required" id="orderName"/>
+</div>
+<div class="formGroup">
+<label>Ваш телефон</label>
+<input type="number" placeholder="Телефон" value="" required="required" id="orderPhone"/>
+</div>
+<div class="formGroup">
+<label>Ваша почта для связи</label>
+<input type="email" placeholder="Email" value="" required="required" id="orderEmail"/>
+</div>
+<div class="formGroup">
+<label for="orderPrice">Приблизительная цена</label>
+<div class="selectfield">
+<select required="required" id="orderPrice">
+<option value="" disabled="disabled" selected="selected">Бюджет</option>
+<option value="0-1000">0$ - 1000$</option>
+<option value="1000-2000">1000$ - 5000$</option>
+<option value="5000-15000">5000$ - 15000$</option>
+<option value="15000-50000">15000$ - 50000$</option>
+<option value="50000-150000">50000$ - 150000$</option>
+<option value="6">Ввести цену</option>
+</select>
+</div>
+</div>
+<textarea cols="30" rows="10" placeholder="Ваш комментарий" id="orderComment"></textarea>
+<input class="btn btn-orange" type="submit" value="Отправить" id="orderSendBtn"/>
+</div>
+<div class="order__right">
+<input class="btn btn-gray" type="button" value="Добавить услугу" id="addServiceBtn"/>
+<div class="order__services"></div>
+</div>
+</form>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__container">
+<div class="footer__content">
+<div class="footer__logo"><a href="/"><img src="./img/logo.svg"/></a></div>
+<p>jonDesign. © 2018 All Rights Reserved</p>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="./js/googleMap.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqqjRSCMw0MCqnG16Hf47OQL5yUQRIh5M&amp;callback=initMap"></script>
+<script type="text/javascript" src="app.bundle.js?d1bca0fdf3fdff1728e6"></script></body>
+</html>

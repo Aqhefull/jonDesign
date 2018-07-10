@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jonDesign</title>
+<meta charset="utf-8"/>
+<meta content="Alexandr Komarevich" name="author"/>
+<meta content="jonDesign - Дизайн-студия" name="description"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<link rel="shortcut icon" href="./favicon.png" type="image/x-icon"/>
+<script type="text/javascript" src="./js/assets/in-view.min.js"></script>
+<link href="app.css?d1bca0fdf3fdff1728e6" rel="stylesheet"></head>
+<body>
+<div id="preloader">
+<div class="sk-folding-cube">
+<div class="sk-cube sk-cube-1"></div>
+<div class="sk-cube sk-cube-2"></div>
+<div class="sk-cube sk-cube-4"></div>
+<div class="sk-cube sk-cube-3"></div>
+</div>
+</div>
+<header class="header">
+<div class="header__container">
+<div class="header__logo"><a href="/"><img src="./img/logo.svg"/></a></div>
+<div class="header__mobile-icon"><span class="mdi mdi-reorder-horizontal"></span></div>
+<nav class="navigation">
+<div class="navigation__container">
+<div class="navigation__content">
+<div class="navigation__item"><a href="/">Главная</a></div>
+<div class="navigation__item"><a href="/services.html">Услуги</a></div>
+<div class="navigation__item dropdown"><a href="/portfolio.html">Портфолио</a>
+<div class="dropdown-content">
+<div class="navigation__item"><a href="/contact.html">Тест</a></div>
+</div>
+</div>
+<div class="navigation__item"><a href="/contact.html">Контакты</a></div>
+<div class="navigation__item"><a href="/order.html">Оформить Заказ</a></div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<section class="slider">
+<div class="slider__bg"></div>
+<div class="slider__wrapper">
+<div class="slider__content">
+<h1>Дизайн интерьера <br>Строительство <br>Ремонт </h1>
+<h5>От идеи к комфорту</h5>
+<h6>Салон-студия с уникальным <br>творческим пространством</h6>
+</div>
+</div>
+</section>
+<section class="consultation">
+<div class="consultation__container">
+<div class="askform">
+<div class="askform__content">
+<h5>Заполните форму</h5>
+<p>и получите консультацию специалиста прямо сейчас</p>
+<form action="" method="post">
+<input type="text" name="name" value="" size="40" placeholder="Имя"/>
+<input type="email" name="email" value="" size="40" placeholder="Email"/>
+<textarea name="message" cols="40" rows="10" placeholder="Сообщение"></textarea>
+<input class="btn btn-orange" type="submit" value="Отправить"/>
+</form>
+</div>
+</div>
+<div class="consultation__location">
+<div class="consultation__location-wrapper">
+<div class="consultation__location-content">
+<h5>Или приезжайте в гости</h5>
+<p>обсудим проект за чашечкой кофе</p>
+<div id="miniMap"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="wecreate">
+<div class="wecreate__container">
+<div class="wecreate__left">
+<div class="wecreate__item">
+<p>Мы создаем не только красивые и функциональные интерьеры, а воплощаем любые смелые идеи по понятной цене</p>
+</div>
+<div class="wecreate__item">
+<p>Мы знаем 1000 и 1 способ создать совершенно неожиданные решения и воплотить самые смелые идеи</p>
+</div>
+</div>
+<div class="wecreate__right"><img src="./img/temp/wall.jpeg"/>
+<div class="wecreate__list" id="weCreateList">
+<div class="wecreate__list-item active"><span>01</span><span>Квартиры и дома</span></div>
+<div class="wecreate__list-item"><span>02</span><span>Офисы</span></div>
+<div class="wecreate__list-item"><span>03</span><span>Магазины и ТРЦ</span></div>
+<div class="wecreate__list-item"><span>04</span><span>Рестораны и кафе</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="ourservices">
+<div class="ourservices__container">
+<div class="ourservices__left">
+<h6>Что мы предлагаем?</h6>
+<p>Мы предлагаем полный цикл услуг от разработки дизайна проекта до финальных ремонтных работ и меблировки</p>
+</div>
+<div class="ourservices__right">
+<div class="ourservices__item">
+<div class="ourservices__image"><img src="./img/icons/005-tourist.svg"/></div>
+<div class="ourservices__content">
+<h6>Дизайн интерьера</h6>
+<ul class="ourservices__list">
+<li>Планировочное решение</li>
+<li>3Д визуализация</li>
+<li>Авторский надзор</li>
+<li>Четрежи</li>
+</ul>
+</div>
+</div>
+<div class="ourservices__item">
+<div class="ourservices__image"><img src="./img/icons/017-cheking.svg"/></div>
+<div class="ourservices__content">
+<h6>Строительство и ремонт</h6>
+<ul class="ourservices__list">
+<li>Строительство домов</li>
+<li>Ремонт магазинов</li>
+<li>Ремонт ресторанов</li>
+<li>Ремонт квартир</li>
+<li>Ремонт офисов</li>
+<li>Ремонт "под ключ"</li>
+</ul>
+</div>
+</div>
+<div class="ourservices__item">
+<div class="ourservices__image"><img src="./img/icons/028-airport.svg"/></div>
+<div class="ourservices__content">
+<h6>Магазин товаров</h6>
+<ul class="ourservices__list">
+<li>Освещение</li>
+<li>Двери</li>
+<li>Мебель</li>
+<li>Напольное покрытие</li>
+<li>Штукатурка</li>
+<li>Текстиль</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="key">
+<div class="key__container">
+<div class="key__header">
+<div class="key__title">
+<h6>ГОТОВЫЙ РЕМОНТ<br> ПОД КЛЮЧ</h6>
+</div>
+<div class="key__variants"><a class="active" href="#" data-id="1">Brooklyn</a><a href="#" data-id="2">Belarus</a></div>
+</div>
+<div class="key__content">
+<div class="key__left">
+<div class="key__item-header">
+<h3>Brooklyn</h3><span>600 $</span>
+</div>
+<ul class="key__item-info">
+<li> <span>Дизайн-проект</span></li>
+<li> <span>Сантехнические работы под ключ</span></li>
+<li> <span>Наполные покрытия и двери</span></li>
+<li> <span>Текстить и оформление</span></li>
+<li> <span>Черновые и чистовые работы</span></li>
+<li> <span>Освещение и электрика</span></li>
+<li> <span>Меблировка</span></li>
+<li> <span>Уборка помещений</span></li>
+</ul>
+<div class="key__item-price"><span>600 $</span>
+<p>В цену входят все виды работ с расходными материалами и мебелью Въезжайте в готовый дом уже через 3 месяца</p>
+</div><a href="/order.html">Оформить заказ</a>
+</div>
+<div class="key__right"><img src="./img/demo2.jpg"/></div>
+</div>
+</div>
+</section>
+<section class="advantages">
+<div class="advantages__wrapper">
+<div class="advantages__inner">
+<div class="advantages__title">
+<h5><span>В ЧЕМ</span> ПРЕИМУЩЕСТВА ГОТОВОГО РЕШЕНИЯ?</h5>
+</div>
+<div class="advantages__content">
+<div class="advantages__info"><span>01</span><span>Въезжайте в дом через 3 месяца</span>
+<p>Мы даем готовое решение по дизайну. Уже через неделю утвердим с вами индивидуальный проект под вашу планировку и бюджет. Сам ремонт займет не больше 90 дней</p>
+</div>
+<div class="advantages__info"><span>02</span><span>Фиксированная стоимость</span>
+<p>Цена за квадратный метр капитального готового дизайнерского ремонта всего от 600$ с отделочными материалами, ремонтными работами, готовой мебелью</p>
+</div>
+<div class="advantages__info"><span>03</span><span>Понятные шаги</span>
+<p>Мы разработали современный и универсальный стиль и точно знаем список материалов и сколько они стоят. Ремонт по готовому решению делается быстрее, цена известна уже на старте и не меняется в процессе</p>
+</div>
+<div class="advantages__info"><span>04</span><span>Экспертность</span>
+<p>Полный авторский надзор, контроль за каждым этапом, контроль здоровья исполнителей, все это в комплексе с собственным производством дает полную гарантию соблюдения сроков, качества и стоимости</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="about">
+<div class="about__container">
+<div class="about__img"><img src="./img/demo/demo1.jpg"/><img src="./img/demo/demo17.jpg"/></div>
+<div class="about__content">
+<div class="about__header">
+<h5>О нас</h5>
+<h6>Умеем слушать и слышать</h6>
+<p>Мы занимаемся любимым делом, которое делает нас счастливыми. Бросаем вызов самым нестандартным решениям!</p>
+</div>
+<div class="about__descr">
+<h5>Наш подход</h5>
+<ul>
+<li> <span>Даем оправданные стоимости работ и защиту от непредвиденных трат</span></li>
+<li> <span><strong>Только точные цифры</strong>. Прозрачное представление закупочных смет и соответствие озвученному бюджету</span></li>
+<li> <span><strong>Гарантированный качественный результат</strong> — благодаря профессиональной команде, в штате которой дизайнеры и рабочие. Работаем над повышением квалификации. Все разнорабочие проходят контроль трезвости.</span></li>
+<li> <span><strong>Точные сроки</strong>. Для нас это не пустой звук — полное планирование всего рабочего процесса и четкий регламент исполнения работ</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="learnus">
+<div class="learnus__container">
+<div class="learnus__header">
+<div class="learnus__left">
+<h6>Узнайте больше о нас</h6>
+<p>Выберите тип проекта:</p>
+</div>
+<div class="learnus__right"><span>Дизайн.</span><span>Строительство.</span><span>Ремонт.</span></div>
+</div>
+<div class="learnus__content">
+<div class="learnus__item"><span>100%</span>
+<p>завершенных заказов</p>
+</div>
+<div class="learnus__item">
+<div class="learnus__img"><img src="./img/icons/time.svg"/></div>
+<div class="learnus__descr">
+<p>Срок реализации </p><span>от 35 дней </span>
+</div>
+</div>
+<div class="learnus__item">
+<div class="learnus__img"><img src="./img/icons/company.svg"/></div>
+<div class="learnus__descr">
+<p>Общая площадь проектов </p><span>25 000 кв.м.</span>
+</div>
+</div>
+<div class="learnus__item">
+<div class="learnus__img"><img src="./img/icons/check-list.svg"/></div>
+<div class="learnus__descr">
+<p>Опыт работы </p><span>более 10 лет </span>
+</div>
+</div>
+<div class="learnus__item">
+<div class="learnus__img"><img src="./img/icons/salary.svg"/></div>
+<div class="learnus__descr">
+<p>Стоимость реализации</p><span>от 400$ за 1 кв.м. "под ключ"</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="whyus">
+<div class="whyus__container">
+<div class="whyus__left">
+<div class="whyus__about">
+<h3>Почему мы?</h3><span>Потому что реально делаем и отвечаем за каждый сантиметр готового проекта</span>
+<p>Мы предоставляем полный цикл работ от дизайна проекта до полной реализации, предоставляем полную базу исполнительных материалов.</p>
+</div>
+<div class="whyus__clients"><span>Для наших клиентов и партнеров</span>
+<ul>
+<li> <strong>Шоу-рум с товарами</strong></li>
+<li> <strong>Дизайн-студия со своим пространством</strong></li>
+<li> <strong>Професиональная команда от дизайнера до прораба</strong></li>
+</ul>
+</div>
+</div>
+<div class="whyus__right"><img src="./img/demo3.jpg"/></div>
+</div>
+</section>
+<section class="howworks">
+<div class="howworks__container">
+<div class="howworks__title">
+<h3>КАК РАБОТАЕМ</h3><span>Идея. Поиск. Решение. Реализация</span>
+</div>
+<div class="howworks__structure">
+<div class="howworks__item">
+<div class="howworks__num"><span>01</span></div>
+<p>Встреча с заказчиком, составление ТЗ на работу</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>02</span></div>
+<p>Выезд команды на замер объекта, составление обмерного плана</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>03</span></div>
+<p>Внесение заказчиком предоплаты за дизайн-проект</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>04</span></div>
+<p>Визуализация отрисовка интерьера, презентация и защита проекта</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>05</span></div>
+<p>Подготовка сметы и согласование материалов</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>06</span></div>
+<p>Предоплата за строительные работы и материалы</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>07</span></div>
+<p>Этап строительных работ</p>
+</div>
+<div class="howworks__item">
+<div class="howworks__num"><span>08</span></div>
+<p>Сдача объекта</p>
+</div>
+</div>
+<div class="howworks__bottom"><span>Вы цените качественный сервис?</span><span>А мы его гарантируем!</span></div>
+</div>
+</section>
+<section class="askquestion">
+<div class="askquestion__container">
+<div class="askquestion__left">
+<div class="askquestion__left-title"><span>Сомневаетесть?</span><span>Боитесь ошибиться?</span><span>Есть вопросы?</span></div>
+<div class="askform">
+<div class="askform__content">
+<h6>Задайте вопрос</h6>
+<p>и мы с удовольствием на него ответим</p>
+<form action="" method="post">
+<input type="text" name="name" value="" size="40" placeholder="Имя"/>
+<input type="email" name="email" value="" size="40" placeholder="Email"/>
+<textarea name="message" cols="40" rows="10" placeholder="Сообщение"></textarea>
+<input class="btn btn-orange" type="submit" value="Отправить"/>
+</form>
+</div>
+</div>
+</div>
+<div class="askquestion__right">
+<h5>Почему ремонт часто оборачивается "болью"?</h5>
+<div class="askquestion__content">
+<div class="askquestion__accordion">Какие гарантии даете на качество ремонта?</div>
+<div class="askquestion__panel">
+<p>Некачественный ремонт возможен, когда работают "непрофессионалы" и используются дешевые материалы или не соблюдаются нормы работ. </p>
+<p>Музей интерьеров - это только профессионалы своего дела с многолетним стажем. Все материалы закупаются с наличием соответствующих сертификатов качества. Гарантия на ремонт - от 10 лет после сдачи проекта!  </p>
+</div>
+<div class="askquestion__accordion">Как я могу контролировать прозрачность расходов?</div>
+<div class="askquestion__panel">
+<p>Некоторые компании или "мастера на все руки" специально занижают стоимость, но зачастую, это оборачивается против заказчика. Итоговая смета после, начинает постоянно расти и может достичь 30-40%, по сравнению с исходной суммой, и требуются новые бюджеты. </p>
+<p>Мы даем точную смету без скрытых переплат и возможных расширений бюджетов. Экономим за счет компетентных работников, учета всех этапов и грамотной организации.</p>
+</div>
+<div class="askquestion__accordion">Не всегда нужно делать дизайн-макет?</div>
+<div class="askquestion__panel">
+<p>Мы настоятельно рекомендуем начинать именно с разработки дизайна - это помогает точно рассчитать бюджет и обойти ошибки планировки, а также снижает риск несостыковки этапов работ.</p>
+</div>
+<div class="askquestion__accordion">Проблемы с фантазией?!</div>
+<div class="askquestion__panel">
+<p>Многие люди не представляю проект без точной визуализации, а так же визуализация помогает подобрать интересующий материал. Мы профессионалы своего дела - придумаем, визуализируем и предложим лучшие варианты дизайна!</p>
+</div>
+<div class="askquestion__accordion">Преимущества проработки дизайн-макета? Стоит ли тратить деньги?</div>
+<div class="askquestion__panel">
+<p>Данная услуга поможет сэкономить до 25% на смету итоговых работ. Вы не только получаете 3D визуализацию, но и рабочую схему всех разводок, работ, подбор материалов и мебели, а значит не будет непредвиденных растрат.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="reviews">
+<div class="reviews__container">
+<h4>ОТЗЫВЫ<br> КЛИЕНТОВ</h4>
+<div class="pic__carousel" id="reviewsCarousel"><span class="mdi mdi-arrow-left-thick"></span>
+<div class="pic__gallery">
+<ul class="pic__images">
+<li>
+<div class="pic__image"><img src="/img/demo1.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p>Сдача ремонтных работ квартиры под ключ</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="/img/demo2.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p>Сдача ремонтных работ квартиры под ключ</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="/img/demo3.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p>Сдача ремонтных работ квартиры под ключ</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="/img/demo4.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p>Сдача ремонтных работ квартиры под ключ</p>
+</div>
+</div>
+</li>
+</ul>
+</div><span class="mdi mdi-arrow-right-thick"></span>
+</div>
+</div>
+</section>
+<section class="team">
+<div class="team__container">
+<h5>Команда профессионалов</h5>
+<p>Принцип работы компании — сотрудничество, основанное на полном доверии</p>
+<div class="pic__carousel" id="teamCarousel"><span class="mdi mdi-arrow-left-thick"></span>
+<div class="pic__gallery">
+<ul class="pic__images">
+<li>
+<div class="pic__image"><img src="./img/team/3.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Василий</span> <br> Мастер</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="./img/team/6.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Александр</span> <br> Генеральный директор</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="./img/team/2.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Дмитрий</span> <br> Дизайнер</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="./img/team/1.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Катерина</span> <br> Менеджер</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="./img/team/4.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Анатолий</span> <br> Прораб</p>
+</div>
+</div>
+</li>
+<li>
+<div class="pic__image"><img src="./img/team/5.jpg" alt="" srcset=""/>
+<div class="pic__info">
+<p><span>Виктория</span> <br> Дизайнер</p>
+</div>
+</div>
+</li>
+</ul>
+</div><span class="mdi mdi-arrow-right-thick"></span>
+</div>
+</div>
+</section>
+<section class="map">
+<div id="map"></div>
+<div class="map__container">
+<div class="map__left">
+<h6>Приезжайте в гости</h6>
+<p>пр. Ленина 20</p>
+<h6>Звоните</h6>
+<p>+38 (067) 111 11 90</p>
+<h6>Пишите</h6>
+<p>support@apple.com</p>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__container">
+<div class="footer__content">
+<div class="footer__logo"><a href="/"><img src="./img/logo.svg"/></a></div>
+<p>jonDesign. © 2018 All Rights Reserved</p>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="./js/googleMap.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqqjRSCMw0MCqnG16Hf47OQL5yUQRIh5M&amp;callback=initMap"></script>
+<script type="text/javascript" src="app.bundle.js?d1bca0fdf3fdff1728e6"></script></body>
+</html>
