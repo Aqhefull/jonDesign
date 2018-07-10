@@ -4,10 +4,11 @@
   "description": "personal pack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --host 192.168.0.104",
+    "start": "webpack-dev-server",
     "dev": "npm run clean && webpack -d",
     "prod": "npm run clean && NODE_ENV=production webpack -p",
-    "clean": "rimraf ./build/*"
+    "clean": "rimraf ./build/*",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Alexander Komarevich",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-harddisk-plugin": "^0.2.0",
     "html-webpack-plugin": "^3.0.6",
