@@ -1,0 +1,141 @@
+.header
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: url('/img/patterns/img-noise.png') $darkGray
+  position: relative
+  &__container
+    +container()
+    min-height: 100px
+    height: 100%
+    padding: 20px 15px
+  &__logo
+    width: 25%
+    @media #{$_sm}
+      padding: 15px 0
+    @media #{$_xs}
+      width: 50%
+  &__mobile-icon
+    display: none
+    @media #{$_sm}
+      display: block
+      text-align: right
+      font-size: 2rem
+      color: #fff
+      margin: 0 15px
+.navigation
+  width: 75%
+  @media #{$_sm}
+    width: 100%
+    display: none
+  margin: 0 auto
+  &__open
+    display: flex
+    flex-direction: column
+    padding: 15px 0
+    height: 100%
+    text-align: right
+    background-color: $darkGray
+    margin-top: 20px
+    .navigation__content
+      display: flex
+      flex-direction: column
+  &__container
+    height: 100%
+    h6
+      text-align: right
+  &__content
+    height: 100%
+    text-align: right
+    font-size: 0
+    @media #{$_sm}
+      width: 100%
+      min-height: 0px
+      text-align: left
+  &__content-mobile
+    @media #{$_sm}
+      display: block
+    .navigation__item
+      display: block
+      a
+        line-height: 1
+        padding: 10px 15px 10px 15px
+        &:hover
+          background-color: transparent
+      &:last-child
+        border-right: 1px solid #333
+  &__item
+    display: inline-block
+    padding: 20px 0
+    border-right: 1px solid #333
+    @media #{$_sm}
+      padding: 10px 0
+    &:last-child
+      border-right: 0
+    a
+      display: inline-block
+      margin: 0 30px
+      @media #{$_lg}
+        margin: 0 20px
+      @media #{$_sm}
+        margin: 0 30px
+      transition: all 0.3s
+      border-bottom: 3px solid transparent
+      font-family: $Lato
+      font-weight: 500
+      letter-spacing: 1px
+      text-transform: uppercase
+      position: relative
+      &:hover
+        &:after
+          content: ''
+          width: 100%
+          height: 2px
+          background-color: #ffffff
+          position: absolute
+          bottom: -10px
+          left: 0
+.logo
+  padding: 10px
+  color: #fff
+  h1
+    padding: 0 18px 0 0
+    font-size: 3rem;
+  span
+    width: 100%
+    display: inline-block
+    text-align: right
+    letter-spacing: 2px
+    margin: 10px 0 0 0
+    font-size: 1rem
+    font-weight: 500
+.dropdown
+  position: relative
+.dropdown-content
+  display: none
+  position: absolute 
+  background-color: #fff
+  z-index: 9999
+  bottom: 0
+  left: 0
+  width: 100%
+  transform: translateY(100%)
+  .navigation__item
+    width: 100%
+    a
+      color: $orange
+      font-weight: 700
+.dropdown:hover .dropdown-content
+  display: block
+  .navigation__item:hover
+    a
+      color: $darkOrange
+      display: block
+.navigation__content-mobile
+  .dropdown-content
+    position: relative
+    transform: none
+    background-color: $orange
+    .navigation__item
+      a
+        color: #fff

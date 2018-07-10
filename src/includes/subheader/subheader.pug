@@ -1,0 +1,13 @@
+mixin subheader(data)
+  section.subheader
+    div.subheader__container
+      ul.subheader__breadcrumbs
+        each breadcrumb in data.breadcrumbs
+          li
+            a(href=breadcrumb.link)=breadcrumb.name
+      div.subheader__title
+        each title in data.titles
+          h1=title.title
+      div.subheader__description
+        each description in data.description
+          p=description.descr

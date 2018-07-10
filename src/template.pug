@@ -1,0 +1,49 @@
+include includes/head/head
+include includes/header/header
+include includes/subheader/subheader
+
+include includes/slider/slider
+include includes/consultation/consultation
+include includes/wecreate/wecreate
+include includes/ourservices/ourservices
+include includes/key/key
+include includes/advantages/advantages
+include includes/about/about
+include includes/learnus/learnus
+include includes/portfolio/portfolio
+include includes/whyus/whyus
+include includes/howworks/howworks
+include includes/askquestion/askquestion
+include includes/reviews/reviews
+include includes/team/team
+include includes/map/map
+include includes/services/services
+include includes/contact/contact
+include includes/order/order
+
+include includes/footer/footer
+
+doctype html
+html(lang="en")
+  block head
+    head
+      +head({
+        "title": "jonDesign",
+        "author": "Alexandr Komarevich",
+        "description": "jonDesign - Дизайн-студия"
+      })
+  body
+    div#preloader
+      div.sk-folding-cube
+        div.sk-cube.sk-cube-1
+        div.sk-cube.sk-cube-2
+        div.sk-cube.sk-cube-4
+        div.sk-cube.sk-cube-3
+    block header
+      +header()
+    block content
+      content
+    block footer
+      +footer()
+    script(type='text/javascript' src="./js/googleMap.js")
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqqjRSCMw0MCqnG16Hf47OQL5yUQRIh5M&callback=initMap")

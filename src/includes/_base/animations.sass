@@ -1,0 +1,116 @@
+/*Fade in*/
+@keyframes fadeIn
+  from 
+    opacity: 0
+  to
+    opacity: 1
+.fadeIn
+  animation: fadeIn 0.5s ease-in 1 forwards !important
+/*---Fade in---*/
+
+/*Fade in Left*/
+@keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translate3d(-100%,0,0)
+  to
+      opacity: 1
+      transform: none
+.fadeInLeft
+  animation: fadeInLeft 1s 1 forwards !important
+/*---Fade in Left---*/
+
+/*Fade in Right*/
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    transform: translate3d(100%,0,0)
+  to
+      opacity: 1
+      transform: none
+.fadeInRight
+  animation: fadeInRight 1s 1 forwards !important
+/*---Fade in Right---*/
+
+/*Fade in Up*/
+@keyframes fadeInUp
+  0%
+      opacity: 0
+      transform: translate3d(0,100%,0)
+  to
+      opacity: 1
+      transform: none
+.fadeInUp
+  animation: fadeInUp 1s 1 forwards !important
+/*---Fade in Up---*/
+
+/*Fade in Down*/
+@keyframes fadeInDown
+  0%
+      opacity: 0
+      transform: translate3d(0,-100%,0)
+  to
+      opacity: 1
+      transform: none
+
+.fadeInDown
+  animation: fadeInDown 1s 1 forwards !important
+/*---Fade in Down---*/
+
+/*Zoom In*/
+@keyframes zoomIn
+  0%
+      opacity: 0;
+      transform: scale3d(.3,.3,.3)
+  100%
+      opacity: 1
+.zoomIn
+  animation: zoomIn 1s 1 forwards !important
+/*---Zoom In---*/
+
+/*learnUsHeight*/
+@keyframes learnUsHeight
+  from
+    height: 0
+    opacity: 0
+  to
+    height: 300px
+    opacity: 1
+
+.learnUsHeight
+  animation: learnUsHeight 1s 1 forwards !important
+/*---learnUsHeight---*/
+
+
+@keyframes animationTop
+  0% 
+    transform: translateY(0%) scale(1)
+  50%
+    transform: translateY(-5%) scale(1.1)
+  100%
+    transform: translateY(-10%) scale(1.4)
+/*-------------------*/
+@keyframes opacityFull
+  0%
+    opacity: 0
+    transform: scale(0.7)
+  50%
+    opacity: 0.4
+    transform: scale(0.9)
+  100%
+    opacity: 1
+    transform: scale(1)
+@keyframes opacityNull
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+.opacityNull
+  animation: opacityNull 0.5s ease-in 1 forwards 
+.opacityFull
+  animation: opacityFull 0.5s ease-in 1 forwards !important
+
+
+
+
+

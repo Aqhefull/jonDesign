@@ -1,0 +1,24 @@
+mixin header()
+  header.header
+    div.header__container
+      div.header__logo
+        a(href="/")
+          img(src="./img/logo.svg")     
+      div.header__mobile-icon
+            span.mdi.mdi-reorder-horizontal
+      nav.navigation
+        div.navigation__container
+          div.navigation__content
+            div.navigation__item
+              a(href="/") Главная
+            div.navigation__item
+              a(href="/services.html") Услуги
+            div.navigation__item.dropdown
+              a(href="/portfolio.html") Портфолио
+              div.dropdown-content
+                div.navigation__item
+                  a(href="/contact.html") Тест
+            div.navigation__item
+              a(href="/contact.html") Контакты
+            div.navigation__item
+              a(href="/order.html") Оформить Заказ

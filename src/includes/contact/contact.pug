@@ -1,0 +1,35 @@
+mixin contact()
+  section.contact
+    div.contact__container
+      div.contact__left
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti eum cumque nesciunt, alias a mollitia dolore architecto debitis autem vitae nam repellendus fuga porro! Reiciendis accusantium placeat aliquid officia assumenda.
+        form(action="", method="post")
+          input(type="text" name="name" value="" size="40" placeholder="Имя")
+          input(type="email" name="email" value="" size="40" placeholder="Email")
+          input(type="text" name="topic" value="" size="40" placeholder="Тема")
+          textarea(name="message" cols="40" rows="10" placeholder="Сообщение")
+          input(type="submit" value="Отправить").btn.btn-orange
+      div.contact__right
+        div.contact__map
+          div#map
+        div.contact__info
+          div.contact__item
+            span.mdi.mdi-home
+            div.contact__descr
+              span Офис - Киев
+              p 51 Francis Street<br>Darlinghurst NSW 2010,<br>Australia
+          div.contact__item
+            span.mdi.mdi-home-modern
+            div.contact__descr
+              span Офис - Харьков
+              p 51 Francis Street<br>Darlinghurst NSW 2010,<br>Australia
+          div.contact__item
+            span.mdi.mdi-cellphone
+            div.contact__descr
+              span Телефон
+              p +61 1900 654 321<br>+61 491 570 110
+          div.contact__item
+            span.mdi.mdi-email
+            div.contact__descr
+              span Email
+              p office@apple.com<br>office@apple.com

@@ -1,0 +1,90 @@
+.whyus
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  position: relative;
+  &__container
+    +container()
+    min-height: 100px
+    height: 100%
+    padding: 50px 0 150px 0
+    @media #{$_xs}
+      padding: 50px 15px
+  &__left
+    width: 40%
+    @media #{$_sm}
+      width: 20%
+    @media #{$_xs}
+      width: 100%
+    position: relative
+    z-index: 11
+    span
+      padding: 0 0 15px 0
+      display: inline-block
+  &__about
+    background-color: $orange
+    padding: 30px 30px 80px 30px
+    position: relative
+    width: 500px
+    left: 25%
+    top: 40px
+    @media #{$_xs}
+      left: 0
+      top: 0
+      width: 100%
+      box-sizing: border-box
+    h3
+      color: #fff
+    span
+      font-weight: 600
+      font-size: 1.3rem
+  &__clients
+    padding: 30px
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    background-color: #ffffff
+    position: relative
+    width: 350px
+    left: 65%
+    top: 10px
+    @media #{$_xs}
+      left: 0
+      top: 0
+      width: 100%
+      box-sizing: border-box
+      margin: 15px 0
+    span
+      font-size: 1.6rem
+      font-weight: 700
+    ul
+      li
+        position: relative
+        padding: 0 15px 0 50px
+        &:before
+          content: ''
+          width: 20px
+          height: 2px
+          background-color: $orange
+          position: absolute
+          top: 50%
+          left: 0
+  &__right
+    width: 60%
+    @media #{$_sm}
+      width: 70%
+      margin-right: 20px
+    @media #{$_xs}
+      width: 100%
+      margin-right: 0
+    position: relative
+    z-index: 10
+    &:after
+        content: ''
+        width: 60%
+        height: 60%
+        background-color: $orange
+        position: absolute
+        bottom: -15px
+        right: -15px
+        z-index: -1
+      

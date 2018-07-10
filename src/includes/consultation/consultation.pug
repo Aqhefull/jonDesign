@@ -1,0 +1,18 @@
+mixin consultation()
+  section.consultation
+    div.consultation__container
+      div.askform
+        div.askform__content
+          h5 Заполните форму
+          p и получите консультацию специалиста прямо сейчас
+          form(action="", method="post")
+            input(type="text" name="name" value="" size="40" placeholder="Имя")
+            input(type="email" name="email" value="" size="40" placeholder="Email")
+            textarea(name="message" cols="40" rows="10" placeholder="Сообщение")
+            input(type="submit" value="Отправить").btn.btn-orange
+      div.consultation__location
+        div.consultation__location-wrapper
+          div.consultation__location-content
+            h5 Или приезжайте в гости
+            p обсудим проект за чашечкой кофе
+            div#miniMap

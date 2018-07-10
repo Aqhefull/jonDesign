@@ -1,0 +1,30 @@
+mixin services(data)
+  section.services
+    div.services__container
+      div.services__wrapper
+        div.services-sidebar
+          div.services-sidebar__content#servicesCategory
+            div.services-sidebar__title Категории
+            ul.services-sidebar__categories
+              each cat in data.categories
+                li(data-name=cat.value)
+                  label.services-sidebar__cat
+                    div.checker
+                      span
+                        input(type="checkbox", name=cat.name, value=cat.value)
+                    span=cat.title
+          div.services-sidebar__content#servicesSubCategory
+            div.services-sidebar__title Подкатегории
+            ul.services-sidebar__categories
+        div.services-content
+          div.services-filter-actions
+            div.services-filter-actions__count Найдено услуг <span>N/A</span>
+            div.select
+              span Сортировка за: 
+              select(name="slct", id="slct")
+                option Выберите
+                option(value="1") За алфавитом
+                option(value="2") Цена - Возрастание
+                option(value="3") Цена - Убывание
+          div.services-content__items
+          div.paginator

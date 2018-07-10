@@ -1,0 +1,61 @@
+.consultation
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background-color: #fff
+  &__container
+    +container()
+    min-height: 100px
+    height: 100%
+    padding: 50px 0
+  .askform
+    @media #{$_sm}
+      +col(12)
+  &__location
+    +col(6)
+    @media #{$_sm}
+      +col(12)
+    &-wrapper
+      background-color: $orange
+      height: 100%
+      position: relative
+    &-content
+      position: relative
+      padding-top: 10%
+      left: 15%
+      opacity: 0
+      @media #{$_lg}
+        left: 5%
+      @media #{$_sm}
+        left: 0
+        right: 0
+        margin: 0 auto
+      width: 700px
+      height: 500px
+      @media #{$_sm}
+        padding: 0 15px
+        width: 100%
+        box-sizing: border-box
+      @media #{$_xs}
+        height: 650px
+        padding: 50px 15px
+      h5
+        @media #{$_md}
+          font-size: 2rem
+      #miniMap
+        position: relative
+        padding-top: 30px
+        bottom: 0
+        top: 25px
+        max-width: 600px
+        @media #{$_md}
+          max-width: 460px
+        @media #{$_sm}
+          max-width: 100%
+        @media #{$_sm}
+          box-sizing: border-box
+        max-height: 400px
+        height: 100%
+        width: 100%
+
+

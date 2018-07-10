@@ -1,0 +1,93 @@
+.askquestion
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  position: relative;
+  &__container
+    +container(center, flex-start)
+    min-height: 100px
+    height: 100%
+    padding: 150px 0
+    @media #{$_xs}
+      padding: 50px 0
+      flex-direction: column
+  .askform
+    width: auto
+    float: right
+    &__content
+      margin: 0
+      opacity: 1
+  &__left
+    +col(4)
+    opacity: 0
+    @media #{$_md}
+      +col(6)
+    @media #{$_xs}
+      +col(12)
+    &-title
+      background-color: $orange
+      padding: 20px
+      display: inline-block
+      float: right
+      span
+        font-weight: 700
+        display: block
+  &__right
+    +col(8)
+    opacity: 0
+    @media #{$_md}
+      +col(6)
+    @media #{$_xs}
+      +col(12)
+    h5
+      padding: 0 20%
+      @media #{$_md}
+        font-size: 2rem
+        padding: 35% 5% 5% 5%
+      @media #{$_xs}
+        padding: 5%
+  &__content
+    background-color: #fff
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    margin: 10% 20%
+    @media #{$_md}
+      margin: 5%
+    .active
+      color: $orange
+      &:after
+        content: '-'
+  &__accordion
+    background-color: #fff
+    color: #000
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 1.3rem
+    font-weight: 700
+    transition: 0.4s
+    border-bottom: 1px solid #ccc
+    box-sizing: border-box
+    &:last-child
+      border: 0
+    &:hover
+      color: $orange
+    &:after
+      content: '+'
+      font-size: 13px
+      color: #777
+      float: right
+      margin-left: 5px
+  &__panel
+    padding: 0 18px
+    width: 100%
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    box-sizing: border-box
+    p
+      padding: 18px 0;

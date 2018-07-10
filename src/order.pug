@@ -1,0 +1,26 @@
+extends template
+
+block content
+  +subheader({
+    titles: [
+      {
+        title: 'Оформить заказ'
+      }
+    ],
+    breadcrumbs: [
+      {
+        link: "/",
+        name: "Главная"
+      },
+      {
+        link: "/order.html",
+        name: "Оформить заказ"
+      }
+    ],
+    description: [
+      {
+        descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum quibusdam alias iste obcaecati ex odit nobis autem quam, adipisci optio fugit laborum, praesentium, impedit enim quis inventore itaque ratione?'
+      }
+    ]
+  })
+  +order()

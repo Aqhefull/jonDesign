@@ -1,0 +1,62 @@
+.about
+  min-height: 400px
+  height: 100%
+  margin: 0 auto
+  background: url(/img/demo1.jpg) center top/100% 
+  background-size: cover
+  &__container
+    +container(space-around, center)
+    min-height: 100px
+    height: 100%
+    padding: 50px 15px
+    @media #{$_sm}
+      flex-direction: column
+  &__img
+    +col(6)
+    img
+      padding: 15px
+    @media #{$_sm}
+      +col(12)
+      img
+        padding: 15px 0
+  &__content
+    +col(6)
+    @media #{$_sm}
+      +col(12)
+  &__header
+    background-color: $orange
+    padding: 40px
+    color: $gray
+    h5, h6
+      color: $gray
+  &__descr
+    background-color: $gray
+    padding: 40px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      background: url('/img/patterns/axiom-pattern.png') 
+      background-position: 50% 50%
+      width: 300px
+      height: 200px
+    h5
+      color: $orange
+    span
+      color: #fff
+    ul
+      padding-top: 20px
+      li
+        position: relative
+        padding: 0 0 15px 50px
+        &:before
+          content: ''
+          width: 20px
+          height: 2px
+          background-color: $orange
+          position: absolute
+          top: 50%
+          left: 0
+    

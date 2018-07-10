@@ -1,0 +1,30 @@
+mixin order()
+  section.order
+    div.order__container
+      form(action="", method="post")#orderForm
+        div.order__left
+          div.formGroup
+            label Как к вам обращаться?
+            input(type="text" placeholder="ФИО" value="" required)#orderName
+          div.formGroup
+            label Ваш телефон
+            input(type="number" placeholder="Телефон" value="" required)#orderPhone
+          div.formGroup
+            label Ваша почта для связи
+            input(type="email" placeholder="Email" value="" required)#orderEmail
+          div.formGroup
+            label(for="orderPrice") Приблизительная цена
+            div.selectfield
+              select(required)#orderPrice
+                option(value="" disabled selected) Бюджет
+                option(value="0-1000") 0$ - 1000$
+                option(value="1000-2000") 1000$ - 5000$
+                option(value="5000-15000") 5000$ - 15000$
+                option(value="15000-50000") 15000$ - 50000$
+                option(value="50000-150000") 50000$ - 150000$
+                option(value="6") Ввести цену
+          textarea(cols="30" rows="10" placeholder="Ваш комментарий")#orderComment
+          input(type="submit" value="Отправить").btn.btn-orange#orderSendBtn
+        div.order__right
+          input(type="button" value="Добавить услугу").btn.btn-gray#addServiceBtn
+          div.order__services

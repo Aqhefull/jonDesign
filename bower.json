@@ -1,0 +1,21 @@
+{
+  "name": "jonpack",
+  "description": "personal pack",
+  "main": "index.js",
+  "authors": [
+    "Alexander Komarevich"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mdi": "^2.2.43"
+  }
+}

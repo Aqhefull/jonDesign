@@ -1,0 +1,113 @@
+.howworks
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: $orange
+  position: relative
+  &__container
+    +container(space-between, stretch)
+    flex-direction: column
+    min-height: 100px
+    height: 100%
+    padding: 150px 0
+    @media #{$_xs}
+      padding: 50px 15px
+  &__title
+    margin: 0 0 60px 0
+    @media #{$_xs}
+      margin: 0 0 30px 0
+  &__structure
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-wrap: wrap
+    @media #{$_xs}
+      flex-direction: column
+  &__item
+    +col(3)
+    @media #{$_xs}
+      +col(12)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    opacity: 0
+    @media #{$_xs}
+      padding: 20px 0
+      flex-direction: row
+      justify-content: flex-start
+    &:nth-child(4)
+      .howworks__num
+        &:after
+          content: ''
+          background: url('/img/icons/dash.svg') center no-repeat
+    &:nth-child(5)
+      .howworks__num
+        &:before
+          content: ''
+          display: inline-block
+          background: url('/img/icons/arrow.svg') center no-repeat
+          background-size: contain
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: -280%
+          width: 245%
+          @media #{$_sm}
+            left: -80%
+            width: 55%
+          height: 25px
+          @media #{$_xs}
+            content: none
+    &:last-child
+      .howworks__num
+        &:after
+          display: none
+  &__num
+    background-color: $gray
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    display: inline-block
+    margin: 20px
+    position: relative
+    &:after
+      content: ''
+      display: inline-block
+      background: url('/img/icons/arrow.svg') center no-repeat
+      background-size: contain
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 150%
+      width: 245%
+      @media #{$_sm}
+        width: 55%
+      height: 25px
+      @media #{$_xs}
+        top: 100%
+        transform: translateX(-50%) rotate(90deg)
+        left: 50%
+        height: 75px
+    span
+      text-align: center
+      color: $orange
+      font-weight: 700
+      font-size: 1.5rem
+      display: inline-block
+      padding: 15px
+  p
+    padding: 15px 0
+    text-align: center
+  &__bottom
+    margin-top: 50px 
+    span
+      display: block
+      font-weight: 700
+      padding: 3px 
+      float: right
+      &:first-child
+        color: $gray
+      &:last-child
+        background-color: $gray
+        color: $orange
+        clear: both
+

@@ -1,0 +1,74 @@
+.contact
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background-color: #fff
+  &__container
+    +container(flex-start, flex-start)
+    min-height: 100px
+    height: 100%
+    padding: 50px 0
+    @media #{$_sm}
+      flex-direction: column
+  &__left
+    +col(6)
+    @media #{$_sm}
+      +col(12)
+      padding: 0 40px
+      box-sizing: border-box
+    form
+      margin-top: 40px
+  &__right
+    +col(6)
+    position: relative
+    padding: 0 20px
+    @media #{$_sm}
+      +col(12)
+      padding: 0
+  &__map
+    width: 100%
+    height: 500px
+    @media #{$_xs}
+      height: 100%
+    margin: 0 auto
+    padding: 0 40px
+    box-sizing: border-box
+  #map
+    position: relative
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    margin: 30px 0
+    padding: 0 40px
+    @media #{$_xs}
+      flex-direction: column
+  &__item
+    position: relative
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 20px 0
+    width: 50%
+    @media #{$_xs}
+      width: 100%
+    .mdi
+      padding: 10px
+      width: 30px
+      height: 30px
+      margin-right: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $orange
+  &__descr
+    span
+      font-weight: 700
+      font-size: 22px
+      margin-bottom: 10px
+      padding-bottom: 10px
+      display: inline-block
+    p
+      font-size: 14px
+

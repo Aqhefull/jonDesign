@@ -1,0 +1,83 @@
+.ourservices
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: url('/img/patterns/services_bg.jpg') center top/cover no-repeat;
+  position: relative;
+  &__container
+    +container()
+    min-height: 100px
+    height: 100%
+    padding: 150px 0
+    @media #{$_sm}
+      flex-direction: column
+    @media #{$_xs}
+      padding: 50px 15px;
+  &__left
+    +col(6)
+    @media #{$_md}
+      +col(5)
+    @media #{$_sm}
+      +col(12)
+    color: #fff
+    h6
+      color: #fff
+  &__right
+    +col(6)
+    @media #{$_md}
+      +col(7)
+    @media #{$_md}
+      +col(12)
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    border: 2px solid #fff
+    padding: 15px 0 0 15px
+    margin: 20px 0
+    @media #{$_xs}
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 15px 0 0 0
+  &__image
+    max-width: 100px
+    width: 100%
+    img
+      max-width: 100px
+  &__content
+    margin: 0 0 0 30px
+    @media #{$_xs}
+      margin: 0
+    h6
+      color: #fff
+      @media #{$_xs}
+        text-align: center
+  &__list
+    background-color: rgba(255,255,255,0.3)
+    margin: 20px 0 0 20px
+    @media #{$_xs}
+      margin: 0
+    padding: 20px
+    display: flex
+    flex-wrap: wrap
+    li
+      position: relative
+      padding-left: 20px
+      color: #fff
+      width: calc(50% - 20px)
+      @media #{$_xs}
+        width: 100%
+      line-height: 1.2
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 5px
+        width: 10px
+        height: 10px
+        background-color: $orange

@@ -1,0 +1,23 @@
+mixin portfolio(data)
+  section.portfolio
+    div.portfolio__container
+      div.portfolio-menu
+        each menu in data.menus
+          div.portfolio-menu__item(data-category=menu.category)
+            span=menu.name
+    div.portfolio-gallery
+      each item in data.items
+        div.portfolio-item(data-category=item.category)
+          img(src=item.img)
+          div.portfolio-item__inner
+            span.portfolio-item__title=item.title
+            div.portfolio-item-info
+              div.portfolio-item-info__area
+                span.class.mdi.mdi-move-resize-variant
+                p=item.area
+              div.portfolio-item-info__money
+                span.class.mdi.mdi-square-edit-outline
+                p=item.money
+              div.portfolio-item-info__time
+                span.class.mdi.mdi-calendar-clock
+                p=item.time

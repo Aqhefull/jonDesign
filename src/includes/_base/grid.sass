@@ -1,0 +1,40 @@
+/********************MEDIA QUERIES***********************/
+$xxs: "(min-width: 320px)"
+$_xxs: "(max-width: 320px)"
+$xs: "(min-width: 480px)"
+$_xs: "(max-width: 480px)"
+$sm: "(min-width: 768px)"
+$_sm: "(max-width: 768px)"
+$md: "(min-width: 1024px)"
+$_md: "(max-width: 1024px)"
+$lg: "(min-width: 1366px)"
+$_lg: "(max-width: 1366px)"
+$xlg: "(min-width: 1920px)"
+
+$cols: 12
+
+%container
+  @media #{$xxs}
+    width: 100%
+    padding: 0 15px
+  @media #{$sm}
+    width: 750px
+  @media #{$md}
+    width: 970px
+  @media #{$lg}
+    width: 1170px
+  @media #{$xlg}
+    width: 1500px
+
+
+=container($justify:space-between, $align:center, $wrap:wrap)
+  @extend %container
+  margin: 0 auto
+  box-sizing: border-box
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-wrap: $wrap
+
+=col($num, $gutter: 40px)
+  width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) )

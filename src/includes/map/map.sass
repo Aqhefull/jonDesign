@@ -1,0 +1,29 @@
+#map
+  height: 100%
+  position: absolute
+  width: 100%
+  top: 0
+  left: 0
+  @media #{$_xs}
+    height: 300px
+    position: relative
+.map
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  border-top: 20px solid $orange
+  position: relative
+  &__container
+    +container()
+    position: relative
+    height: 100%
+    z-index: 100
+    padding: 0
+  &__left
+    +col(4)
+    background-color: $orange
+    color: #000
+    padding: 50px 50px 50px 100px
+    @media #{$_xs}
+      +col(12)
+      padding: 15px

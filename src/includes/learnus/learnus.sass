@@ -1,0 +1,84 @@
+.learnus
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  position: relative;
+  &__container
+    +container()
+    min-height: 100px
+    height: 100%
+    padding: 150px 0 50px 0
+    @media #{$_xs}
+      padding: 50px 0 50px 0
+  &__header
+    display: flex
+    @media #{$_sm}
+      padding: 15px
+    @media #{$_xs}
+      flex-direction: column-reverse
+  &__left
+    margin-left: 150px
+    @media #{$_sm}
+      margin-left: 0
+  &__right
+    @media #{$_sm}
+      margin-left: 60px
+    @media #{$_xs}
+      margin-left: 0
+    span
+      font-size: 2.5rem
+      opacity: 0
+      font-weight: 700
+      margin-left: 150px
+      @media #{$_sm}
+        margin-left: 0
+      display: block
+  &__content
+    display: flex
+    margin: 0 auto
+    @media #{$_sm}
+      flex-wrap: wrap
+    @media #{$_xs}
+      flex-direction: column-reverse
+  &__item
+    padding: 20px
+    margin: 20px
+    width: 20%
+    opacity: 0
+    @media #{$_xs}
+      width: 100%
+      margin: 20px 0 !important
+      box-sizing: border-box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    span
+      font-weight: 700
+    &:first-child
+      background-color: $orange
+      height: 300px
+      margin-top: 90px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      opacity: 0
+    &:nth-child(2)
+
+    &:nth-child(3)
+      margin-top: 120px
+    &:nth-child(4)
+      margin-top: 10px
+    &:nth-child(5)
+      margin-top: -50px
+  &__img
+    max-width: 70px
+    box-shadow: 20px 20px 0 $orange;
+    padding: 15px
+    background-color: $gray
+  &__descr
+    margin-top: 60px
+    @media #{$_xs}
+      text-align: center
+

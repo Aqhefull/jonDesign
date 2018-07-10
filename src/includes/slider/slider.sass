@@ -1,0 +1,76 @@
+.slider
+  overflow: hidden
+  position: relative
+  &__bg
+    height: 100%
+    height: 700px
+    background-color: $orange
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    transition: all 1s
+    &:after
+      content: ''
+      background-color: rgba(0,0,0,0.3)
+      width: 100%
+      height: 100%
+      position: absolute
+  &__wrapper
+    position: absolute
+    z-index: 9998
+    top: 0
+    left: 35%
+    width: 600px
+    transform: translateX(-50%)
+    text-align: left
+    color: #fff
+    background: $orange
+    @media #{$_sm}
+      background: rgba(255, 145, 0, 0.45)
+    line-height: 0.9
+    height: 100%
+    padding: 30px
+    @media #{$_sm}
+      width: 100%
+      left: 0
+      transform: none
+      box-sizing: border-box
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      background: url('/img/patterns/axiom-pattern.png') 
+      background-position: 50% 50%
+      width: 350px
+      height: 350px
+  &__content
+    position: absolute
+    left: 25%
+    top: 10%
+    width: 900px
+    @media #{$_sm}
+      left: 0
+      padding: 0 15px
+      width: 100%
+    h1
+      @media #{$_sm}
+        font-size: 4rem
+      @media #{$_xs}
+        font-size: 3rem
+    h5,h6
+      color: $darkGray
+    h6
+      font-weight: 600
+      font-size: 1.65rem
+      @media #{$_xs}
+        font-size: 1.3rem
+    h5
+      font-size: 2.7rem
+      @media #{$_xs}
+        font-size: 2rem
+@keyframes left
+  0 
+    transform: scale(1) rotate(0deg)
+  100% 
+    transform: scale(2) rotate(15deg)

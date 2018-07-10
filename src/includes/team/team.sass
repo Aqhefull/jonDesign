@@ -1,0 +1,42 @@
+.team
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  position: relative;
+  &__container
+    +container()
+    flex-direction: column
+    min-height: 100px
+    height: 100%
+    padding: 150px 0
+    @media #{$_xs}
+      padding: 50px 15px 100px 15px
+      h5
+        font-size: 2.5rem
+  .pic
+    &__image
+      width: 100%
+      img
+        height: 100%
+        max-width: 300px
+        @media #{$_md}
+          width: 90%
+        margin: 0 auto
+        box-sizing: border-box
+        box-shadow: 10px 10px 0 $gray
+    &__carousel
+      padding: 70px 0 0 0
+    &__info
+      position: initial
+      text-align: center
+      margin: 40px auto 0 auto
+      box-sizing: border-box
+      max-width: 300px
+      @media #{$_md}
+        width: 90%
+      font-size: 1rem
+      @media #{$_sm}
+        font-size: 0.9rem
+      span
+        font-weight: 700

@@ -1,0 +1,166 @@
+extends template
+
+block content
+  +subheader({
+    titles: [
+      {
+        title: 'Наши услуги'
+      }
+    ],
+    breadcrumbs: [
+      {
+        link: "/",
+        name: "Главная"
+      },
+      {
+        link: "/services.html",
+        name: "Услуги"
+      }
+    ],
+    description: [
+      {
+        descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum quibusdam alias iste obcaecati ex odit nobis autem quam, adipisci optio fugit laborum, praesentium, impedit enim quis inventore itaque ratione?'
+      }
+    ]
+  })
+  +services({
+    "categories": [
+      {
+        value: "interiour_design",
+        title: "Дизайн интерьера",
+        subcat: [{value: "repair_key", title: "Ремонт \'под ключ\'"}]
+      },
+      {
+        value: "construction_repair",
+        title: "Строительство и ремонт"
+      },
+      {
+        value: "shop_products",
+        title: "Магазин товаров"
+      }
+    ],
+    "items": [
+      {
+        src: "./img/slider/1.jpeg",
+        title: "Американский пирог",
+        "category": "construction_repair",
+        "subcat": "repair_key",
+        "child": "Ремонт 'под ключ'",
+        "price": "5600$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+            {
+        src: "./img/slider/1.jpeg",
+        title: "Финский уголок",
+        "category": "construction_repair",
+        "subcat": "repair_key",
+        "child": "Ремонт 'под ключ'",
+        "price": "3400$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+                  {
+        src: "./img/slider/1.jpeg",
+        title: "Житомирская мечта",
+        "category": "construction_repair",
+        "child": "Ремонт 'под ключ'",
+        "price": "2600$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+            {
+        src: "./img/slider/2.jpeg",
+        title: "Патриотика",
+        "category": "construction_repair",
+        "child": "Строительство домов",
+        "price": "40000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+                  {
+        src: "./img/slider/2.jpeg",
+        title: "Ремонт магазинов",
+        "category": "construction_repair",
+        "child": "Ремонт магазинов",
+        "price": "10000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+          {
+        src: "./img/slider/3.jpeg",
+        title: "Базовый",
+        "category": "construction_repair",
+        "child": "Ремонт квартир",
+        "price": "5000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        src: "./img/slider/3.jpeg",
+        title: "Стандарт",
+        "category": "construction_repair",
+        "child": "Ремонт квартир",
+        "price": "7000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+            {
+        src: "./img/slider/3.jpeg",
+        title: "Про",
+        "category": "construction_repair",
+        "child": "Ремонт квартир",
+        "price": "15000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+                {
+        src: "./img/slider/3.jpeg",
+        title: "Про",
+        "category": "construction_repair",
+        "child": "Ремонт офисов",
+        "price": "14400$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+          {
+        src: "./img/slider/4.jpeg",
+        title: "Ксеноновый набор",
+        "category": "shop_products",
+        "child": "Освещение",
+        "price": "200$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+                {
+        src: "./img/slider/4.jpeg",
+        title: "Ретро стиль",
+        "category": "shop_products",
+        "child": "Освещение",
+        "price": "1000$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+                      {
+        src: "./img/slider/4.jpeg",
+        title: "Двери Белоруссии",
+        "category": "shop_products",
+        "child": "Двери",
+        "price": "500$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+       {
+        src: "./img/slider/4.jpeg",
+        title: "Стол Финский",
+        "category": "shop_products",
+        "child": "Мебель",
+        "price": "3500$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+             {
+        src: "./img/slider/4.jpeg",
+        title: "Планировочное решение",
+        "category": "interiour_design",
+        "child": "Планировочное решение",
+        "price": "300$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        src: "./img/slider/4.jpeg",
+        title: "Четрежи",
+        "category": "interiour_design",
+        "child": "Четрежи",
+        "price": "100$",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+    ]
+  })

@@ -1,0 +1,177 @@
+.services
+  min-height: 100px
+  height: 100%
+  margin: 0 auto
+  background: #fff
+  position: relative;
+  &__container
+    +container(space-between,space-between)
+    min-height: 100px
+    height: 100%
+    padding: 50px 0
+    flex-direction: column
+  &__wrapper
+    +container(space-between,flex-start)
+    padding: 0
+    @media #{$_sm}
+      flex-direction: column
+  &__title
+    margin-bottom: 50px
+  &-sidebar
+    +col(3)
+    @media #{$_sm}
+      +col(12)
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      align-items: flex-start
+    &__title
+      font-size: 22px
+      font-weight: bold
+      position: relative
+      color: $orange
+      padding: 0 0 28px 0
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 2px
+        width: 70%
+        margin: 0 0 20px 0
+        background-color: $orange
+    &__content
+      padding: 18px
+      margin: 30px 10px
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+      &:first-child
+        margin: 0 10px 30px 10px
+      @media #{$_sm}
+        margin: 0 10px 30px 10px
+        height: 100%
+        max-height: 300px
+      @media #{$_xs}
+        width: 100%
+    &__cat
+      display: flex
+      cursor: pointer
+      .checker
+        width: 16px
+        height: 16px
+        margin-right: 10px
+        .checked
+          background-position: -16px 0
+        span
+          background-image: url('/img/icons/check/checks_blue_2x.png')
+          background-size: 32px
+          background-repeat: no-repeat
+          display: inline-block
+          zoom: 1
+          text-align: center
+          background-position: 0 0
+          width: 16px
+          height: 16px
+          input
+            opacity: 0
+            border: 0
+            background: none
+            display: inline-block
+            zoom: 1
+  &-content
+    +col(9)
+    @media #{$_sm}
+      +col(12)
+    &__items
+      padding: 18px
+    &-item
+      padding: 15px
+      margin: 25px 0
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      @media #{$_xs}
+        flex-direction: column
+      &:first-child
+        margin: 10px 0 25px 0
+      &__img
+        width: 30%
+        box-sizing: border-box
+        padding: 10px 20px 10px 10px
+        @media #{$_xs}
+          width: 100%
+          padding: 10px 0
+        img
+          box-sizing: border-box
+          border: 10px solid $orange
+      &__content
+        width: 70%
+        @media #{$_xs}
+          width: 100%
+      &__info
+        position: relative
+      &__title
+        font-size: 26px
+        font-weight: 700
+      &__category
+        font-weight: 600
+        padding: 10px 0 0 0
+        span
+          color: $orange
+      &__price
+        position: absolute
+        @media #{$_xs}
+          position: relative
+          margin-top: 15px
+          display: inline-block
+        top: 0
+        right: 0
+        padding: 15px
+        background-color: $orange
+        color: #ffffff
+        font-weight: 700
+      &__description
+        padding-top: 18px
+    &-item.num
+      display: none
+  &-filter-actions
+    padding: 0 0 20px 0
+    @media #{$_sm}
+      padding: 20px
+    border-bottom: 1px solid $orange
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media #{$_xs}
+      flex-direction: column
+      align-items: flex-start
+    &__count
+      text-transform: uppercase
+      @media #{$_xs}
+        margin-bottom: 15px
+      span
+        color: $orange
+        font-weight: 700
+.paginator
+  line-height: 150%
+  display: flex
+  flex-wrap: wrap
+  padding: 20px
+.paginator > span
+  margin-right: 10px
+  color: #fff
+  cursor: pointer
+  background-color: $gray
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 15px
+  height: 15px
+  padding: 15px
+  &:hover
+    background-color: $darkOrange
+.paginator_active
+  background-color: $orange !important
+#servicesSubCategory
+  display: none

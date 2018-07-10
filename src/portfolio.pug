@@ -1,0 +1,103 @@
+extends template
+
+block content
+  +subheader({
+    titles: [
+      {
+        title: 'Портфолио'
+      }
+    ],
+    breadcrumbs: [
+      {
+        link: "/",
+        name: "Главная"
+      },
+      {
+        link: "/portfolio.html",
+        name: "Портфолио"
+      }
+    ],
+    description: [
+      {
+        descr: 'Наши проекты — наша гордость'
+      }
+    ]
+  })
+  +portfolio({
+    "items": [
+      {
+        img: './img/slider/1.jpeg',
+        title: 'Салон света ArtLight',
+        area: '100m2',
+        money: '10000$',
+        time: '45 дней',
+        category: 'all, home'
+      },
+      {
+      img: './img/slider/2.jpeg',
+        title: 'Квартира в г.Харьков',
+        area: '200m2',
+        money: '20000$',
+        time: '75 дней',
+        category: 'all, room'
+      },
+      {
+      img: './img/slider/3.jpeg',
+        title: 'Квартира в г.Киев',
+        area: '100m2',
+        money: '7000$',
+        time: '15 дней',
+        category: 'all, office'
+      },
+      {
+      img: './img/slider/4.jpeg',
+        title: 'Квартира в г.Львов',
+        area: '50m2',
+        money: '3000$',
+        time: '65 дней',
+        category: 'all, restaurants'
+      },
+      {
+      img: './img/slider/5.jpeg',
+        title: 'Офис в г.Киев',
+        area: '400m2',
+        money: '300000$',
+        time: '125 дней',
+        category: 'all, shop'
+      },
+      {
+      img: './img/slider/6.jpeg',
+        title: 'Дом',
+        area: '150m2',
+        money: '30000$',
+        time: '67 дней',
+        category: 'all, home'
+      }
+    ],
+    "menus": [
+      {
+        name: 'Все проекты',
+        category: 'all'
+      },
+      {
+        name: 'Дома',
+        category: 'home'
+      },
+      {
+        name: 'Квартиры',
+        category: 'room'
+      },
+      {
+        name: 'Офисы',
+        category: 'office'
+      },
+      {
+        name: 'Рестораны',
+        category: 'restaurants'
+      },
+      {
+        name: 'ТЦ и Магазины',
+        category: 'shop'
+      },
+    ]
+  })
