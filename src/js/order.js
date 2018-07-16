@@ -30,14 +30,19 @@ function formMessage(message, type, parent){
 // orderPrice ---------
 if (orderPrice != null) {
   orderPrice.addEventListener("change", function () {
+    const yourPriceExist = document.querySelector("#orderYourPrice")
+    if (yourPriceExist) yourPriceExist.parentElement.remove();
     if (orderPrice.value === "6") {
+      const yourPriceWrap = document.createElement("div");
+      yourPriceWrap.className = "formGroup";
       const yourPrice = document.createElement('input')
       yourPrice.id = "orderYourPrice";
       yourPrice.setAttribute("type", "text");
       yourPrice.setAttribute("placeholder", "Введите вашу цену ($)");
       yourPrice.style.minWidth = '150px'
       yourPrice.style.width = "auto";
-      orderLeft.insertBefore(yourPrice, orderComment);
+      yourPriceWrap.appendChild(yourPrice);
+      orderLeft.insertBefore(yourPriceWrap, orderComment);
     }
   });
 }
@@ -217,6 +222,15 @@ if (orderSendBtn != null) {
     formData.orderPhone = orderPhone.value;
     formData.orderEmail = orderEmail.value;
     formData.orderPrice = orderPrice.value;
+    if (orderPrice.value === '6') {
+      const orderCustomPrice = document.getElementById("orderYourPrice");
+      if (orderCustomPrice.value === '') {
+        formMessage("Укажите бюджет", "error", orderCustomPrice.parentElement);
+        return
+      } else {
+        formData.orderPrice = orderCustomPrice.value;
+      }
+    }
     formData.orderComment = orderComment.value;
     formData.orderCategories = [];
     getBase().then(result => {
