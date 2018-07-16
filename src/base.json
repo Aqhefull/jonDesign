@@ -57,7 +57,7 @@
   ],
   "items": [
     {
-      "src": "./img/slider/1.jpeg",
+      "src": "./img/demo/demo1.jpg",
       "title": "Американский пирог",
       "category": "construction_repair",
       "subcat": "repair_key",
@@ -67,7 +67,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/1.jpeg",
+      "src": "./img/demo/demo2.jpg",
       "title": "Финский уголок",
       "category": "construction_repair",
       "subcat": "repair_key",
@@ -77,7 +77,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/1.jpeg",
+      "src": "./img/demo/demo3.jpg",
       "title": "Житомирская мечта",
       "category": "construction_repair",
       "subcat": "repair_key",
@@ -87,7 +87,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/2.jpeg",
+      "src": "./img/demo/demo4.jpg",
       "title": "Патриотика",
       "category": "construction_repair",
       "subcat": "home_build",
@@ -97,7 +97,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/2.jpeg",
+      "src": "./img/demo/demo5.jpg",
       "title": "Ремонт магазинов",
       "category": "construction_repair",
       "subcat": "shop_repair",
@@ -107,7 +107,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/3.jpeg",
+      "src": "./img/demo/demo6.jpg",
       "title": "Базовый",
       "category": "construction_repair",
       "subcat": "apartment_repair",
@@ -117,7 +117,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/3.jpeg",
+      "src": "./img/demo/demo7.jpg",
       "title": "Стандарт",
       "category": "construction_repair",
       "subcat": "apartment_repair",
@@ -127,7 +127,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/3.jpeg",
+      "src": "./img/demo/demo8.jpg",
       "title": "Про",
       "category": "construction_repair",
       "subcat": "apartment_repair",
@@ -137,7 +137,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/3.jpeg",
+      "src": "./img/demo/demo9.jpg",
       "title": "Про",
       "category": "construction_repair",
       "subcat": "office_repair",
@@ -147,7 +147,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/4.jpeg",
+      "src": "./img/demo/demo10.jpg",
       "title": "Ксеноновый набор",
       "category": "shop_products",
       "subcat": "shop_light",
@@ -157,7 +157,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/4.jpeg",
+      "src": "./img/demo/demo11.jpg",
       "title": "Ретро стиль",
       "subcat": "shop_light",
       "category": "shop_products",
@@ -167,7 +167,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/4.jpeg",
+      "src": "./img/demo/demo12.jpg",
       "title": "Двери Белоруссии",
       "category": "shop_products",
       "subcat": "shop_doors",
@@ -177,7 +177,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/4.jpeg",
+      "src": "./img/demo/demo13.jpg",
       "title": "Стол Финский",
       "category": "shop_products",
       "subcat": "shop_furniture",
@@ -187,7 +187,7 @@
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "src": "./img/slider/4.jpeg",
+      "src": "./img/demo/demo14.jpg",
       "title": "Планировочное решение",
       "category": "interiour_design",
       "subcat": "plain_solution",
